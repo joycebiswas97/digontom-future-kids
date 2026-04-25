@@ -14,7 +14,7 @@ function Navbar() {
     ];
 
     return (
-        <header className="bg-[#000000] text-white h-[74px] flex items-center justify-between px-[12px] md:px-[24px] py-[16px] relative z-50 font-[550] sticky top-0">
+        <header className="bg-[#000000] text-white h-[74px] flex items-center justify-between px-[12px] md:px-[24px] py-[16px] z-50 font-[550] fixed md:top-6 md:left-[50%] md:translate-x-[-50%] w-full md:w-[95%]">
 
             <nav className="h-[50px] w-[122px] flex items-center">
                 <img src={image} alt="logo" className="h-full object-contain" />
