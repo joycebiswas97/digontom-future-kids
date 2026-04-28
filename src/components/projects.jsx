@@ -35,7 +35,7 @@ const Projects = () => {
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-amber-600">
+          <h2 className="text-3xl md:text-5xl font-extrabold pb-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-amber-600">
             Featured Projects
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">

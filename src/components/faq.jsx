@@ -52,7 +52,7 @@ function Faq() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     {/* Image Section (Left) */}
-                    <div className="relative flex justify-center items-center w-full order-2 lg:order-1">
+                    <div className="relative flex justify-center items-center w-full">
                         <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-amber-500/20 rounded-3xl filter blur-3xl"></div>
                         <img 
                             src={faqImage} 
@@ -62,7 +62,7 @@ function Faq() {
                     </div>
 
                     {/* FAQ Accordion (Right) */}
-                    <div className="flex flex-col space-y-4 order-1 lg:order-2">
+                    <div className="flex flex-col space-y-4">
                         {faqs.map((faq, index) => (
                             <div 
                                 key={index} 
@@ -72,7 +72,7 @@ function Faq() {
                                     onClick={() => toggleFaq(index)}
                                     className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
                                 >
-                                    <span className={`font-semibold text-lg transition-colors duration-300 ${activeIndex === index ? 'text-orange-400' : 'text-gray-200'}`}>
+                                    <span className={`font-600 text-md transition-colors duration-300 ${activeIndex === index ? 'text-orange-400' : 'text-gray-200'}`}>
                                         {faq.question}
                                     </span>
                                     <span className={`ml-4 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 transition-transform duration-300 ${activeIndex === index ? 'transform rotate-180 bg-orange-500/20 text-orange-400' : 'text-gray-400'}`}>

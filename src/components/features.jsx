@@ -68,8 +68,8 @@ const Features = () => {
     <section id="features" className="py-24 bg-[#0a0a0a] text-white relative border-y border-zinc-800">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-amber-600">
-            Why Choose Digontom?
+          <h2 className="text-3xl md:text-5xl font-extrabold pb-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-amber-600">
+            Why Choose Digontom Future Kids?
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-lg">
             We don't just teach coding; we build innovators. Here's what makes our curriculum the best choice for your child's future.
