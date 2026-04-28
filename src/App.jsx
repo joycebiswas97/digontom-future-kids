@@ -3,7 +3,7 @@ import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Features from './components/features';
 import Courses from './components/homepageCourses';
-import Projects from './components/projects';
+import Projects from './components/homepageProjects';
 import Testimonials from './components/testimonials';
 import Faq from './components/faq';
 import Cta from './components/cta';
