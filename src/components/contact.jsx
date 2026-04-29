@@ -57,8 +57,8 @@ function Contact() {
                                 <div>
                                     <h3 className="text-xl font-bold text-white mb-2">Location</h3>
                                     <p className="text-gray-400 leading-relaxed">
-                                        123 Innovation Drive<br />
-                                        Tech Valley, CA 94043
+                                        Barasat, North 24 Parganas<br />
+                                        West Bengal, 700125
                                     </p>
                                 </div>
                             </div>
