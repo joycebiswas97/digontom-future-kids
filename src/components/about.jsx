@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section className="bg-[#0a0a0a] text-white py-20 px-6 md:px-12 relative overflow-hidden" id="about">
+        <section className="bg-[#0a0a0a] text-white py-30 px-6 md:px-12 relative overflow-hidden" id="about">
             {/* Background effects */}
             <div className="absolute top-1/2 left-0 w-72 h-72 bg-amber-600 rounded-full mix-blend-screen filter blur-[150px] opacity-20 transform -translate-y-1/2"></div>
             

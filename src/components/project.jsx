@@ -26,7 +26,7 @@ const projectsData = [
 
 const ProjectPage = () => {
   return (
-    <div id="projects-page" className="py-24 bg-[#0a0a0a] text-white relative min-h-screen">
+    <div id="projects-page" className="py-24 bg-[#0a0a0a] text-white relative min-h-screen w-full overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-[10%] left-[-10%] w-96 h-96 bg-orange-600 rounded-full mix-blend-screen filter blur-[150px] opacity-20 pointer-events-none"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-amber-600 rounded-full mix-blend-screen filter blur-[150px] opacity-20 pointer-events-none"></div>

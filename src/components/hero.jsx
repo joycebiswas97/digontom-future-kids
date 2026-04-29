@@ -1,4 +1,5 @@
 import heroImage from "../assets/hero.jpeg";
+import {Link} from 'react-router-dom';
 
 function Hero() {
     return (
@@ -22,9 +23,11 @@ function Hero() {
                         We are here to help them build it. Equip your kids with the real-world tech skills they need to become confident and future-ready.
                     </p>
                     <div className="pt-3 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                        <button className="px-8 py-4 bg-gradient-to-r from-orange-600 to-amber-500 rounded-full font-bold text-white hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(234,88,12,0.4)] w-full sm:w-auto">
-                            Enroll Now
-                        </button>
+                        <Link to="/enroll">
+                            <button className="px-8 py-4 bg-gradient-to-r from-orange-600 to-amber-500 rounded-full font-bold text-white hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(234,88,12,0.4)] w-full sm:w-auto">
+                                Enroll Now
+                            </button>
+                        </Link>
                         <button className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/20 rounded-full font-bold text-white backdrop-blur-sm transition-all duration-300 w-full sm:w-auto">
                             Learn More
                         </button>
