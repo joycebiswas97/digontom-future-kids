@@ -93,9 +93,9 @@ function Navbar() {
 
                                     <div className={`w-full bg-gray-50 flex flex-col items-center overflow-hidden transition-all duration-300 ${mobileCoursesOpen ? 'max-h-[500px] border-b border-gray-800/10' : 'max-h-0'}`}>
                                         {['Web Development', 'Mobile App Development', 'AI & Automation', 'Game Development', 'Python Programming', 'Robotics Fundamentals'].map((course, i) => (
-                                            <a
+                                            <Link
                                                 key={i}
-                                                href="#courses"
+                                                to="/courses"
                                                 className="w-full text-center py-[10px] text-[15px] text-gray-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
                                                 onClick={() => {
                                                     setIsOpen(false);
@@ -103,26 +103,28 @@ function Navbar() {
                                                 }}
                                             >
                                                 {course}
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                 </div>
                             );
                         }
                         return (
-                            <a
+                            <Link
                                 key={index}
-                                href={link.href}
+                                to={link.href}
                                 className="w-full text-black text-center py-[12px] text-[18px] hover:bg-gray-100 border-b border-gray-800/10 transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.name}
-                            </a>
+                            </Link>
                         );
                     })}
-                    <button className="mt-[15px] bg-gradient-to-r from-orange-600 to-amber-500 px-[30px] py-[10px] rounded-full text-[16px] font-semibold hover:bg-gray-200 transition-colors w-[80%] max-w-[300px] text-white">
-                        Enroll in a course
-                    </button>
+                    <Link to="/enroll" onClick={() => setIsOpen(false)} className="mt-[15px] w-[80%] max-w-[300px]">
+                        <button className="w-full bg-gradient-to-r from-orange-600 to-amber-500 px-[30px] py-[10px] rounded-full text-[16px] font-semibold hover:bg-gray-200 transition-colors text-white">
+                            Enroll in a course
+                        </button>
+                    </Link>
                 </div>
             )}
 
