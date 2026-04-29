@@ -16,6 +16,7 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        // In a real app, this is where you would handle form submission
         console.log('Form submitted:', formData);
         alert("Thank you for reaching out! We'll get back to you soon.");
         setFormData({ name: '', email: '', message: '' });
@@ -56,14 +57,13 @@ function Contact() {
                                 <div>
                                     <h3 className="text-xl font-bold text-white mb-2">Location</h3>
                                     <p className="text-gray-400 leading-relaxed">
-                                        Barasat, North 24 Parganas<br />
-                                        West Bengal, 700125
+                                        123 Innovation Drive<br />
+                                        Tech Valley, CA 94043
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Email Section */}
                         <div className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-amber-500/30 transition-colors duration-300">
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-xl bg-amber-500/20 text-amber-400">
@@ -81,7 +81,6 @@ function Contact() {
                             </div>
                         </div>
 
-                        {/* Phone Section */}
                         <div className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:border-orange-500/30 transition-colors duration-300">
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-xl bg-orange-500/20 text-orange-400">
@@ -139,4 +138,22 @@ function Contact() {
                                     onChange={handleChange}
                                     required
                                     rows="5"
-                                    className="w-full px-4 py-3 bg-[#
+                                    className="w-full px-4 py-3 bg-[#0a0a0a]/50 border border-white/10 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-transparent transition-all resize-none"
+                                    placeholder="How can we help you?"
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                className="w-full py-4 bg-gradient-to-r from-orange-600 to-amber-500 rounded-xl font-bold text-white hover:scale-[1.02] transition-transform duration-300 shadow-[0_0_20px_rgba(234,88,12,0.3)]"
+                            >
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Contact;
